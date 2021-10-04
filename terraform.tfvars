@@ -1,0 +1,5 @@
+project          = "<PROJECTNAME>"
+credentials_file = "terraform_serviceaccount_credential.json"
+region           = "us-central1"
+zone             = "us-central1-c"
+bucket           = "<BUCKETNAE>"
