@@ -5,6 +5,17 @@ variable "region" {}
 variable "zone" {}
 variable "bucket" {}
 
+# define providers source and version
+# this property is optional, but recommended.
+terraform {
+  required_providers {
+    google = {
+      source  = "hashicorp/google"
+      version = "3.86.0"
+    }
+  }
+}
+
 # define provider (credential and more)
 provider "google" {
   credentials = file(var.credentials_file)
